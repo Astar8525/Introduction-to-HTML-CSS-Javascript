@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Developer Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <div id="profile-name">Anthony Norman</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Project Details</a>
+      <a href="#skills">Skills</a>
+      <a href="#recommendations">Recommendations</a>
+      <i class="fas fa-home" id="home-icon"></i>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="your-photo.jpg" alt="Profile" class="profile-img">
+    <p>Hello! I'm a web developer passionate about HTML, CSS, and JavaScript. I love building interactive user experiences.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill"><img src="html-logo.png"><span>HTML</span></div>
+      <div class="skill"><img src="css-logo.png"><span>CSS</span></div>
+      <div class="skill"><img src="js-logo.png"><span>JavaScript</span></div>
+      <div class="skill"><img src="git-logo.png"><span>Git</span></div>
+      <div class="skill"><img src="react-logo.png"><span>React</span></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Project Details</h2>
+    <div class="project">Project 1: Weather App</div>
+    <div class="project">Project 2: Todo List</div>
+    <div class="project">Project 3: Portfolio Website</div>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <div id="recommendation-list">
+      <div class="recommendation">Jane: Great work ethic and detail-oriented.</div>
+      <div class="recommendation">John: Excellent front-end skills.</div>
+      <div class="recommendation">Sarah: A pleasure to collaborate with.</div>
+    </div>
+
+    <form id="recommendation-form">
+      <input type="text" id="new-rec" placeholder="Add a recommendation..." required>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div id="popup" class="hidden">Thank you for submitting a recommendation!</div>
+
+</body>
+</html>
