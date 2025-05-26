@@ -5,41 +5,26 @@ body {
 }
 
 header {
-  background: #f4f4f4;
-  padding: 10px;
+  background-color: #333;
+  color: white;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-#profile-name {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-nav a {
+nav a, #home-icon {
   margin: 0 10px;
+  color: white;
   text-decoration: none;
-  color: black;
 }
 
-nav a:hover {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-#home-icon {
-  margin-left: 10px;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-section {
+#about, #skills, #projects, #recommendations {
   padding: 20px;
 }
 
 .profile-img {
-  width: 150px;
+  max-width: 150px;
   border-radius: 50%;
 }
 
@@ -49,40 +34,32 @@ section {
 }
 
 .skill img {
-  width: 40px;
+  width: 50px;
+  height: 50px;
   display: block;
-  margin-bottom: 5px;
 }
 
-.skill {
+.skill span {
+  display: block;
   text-align: center;
+  margin-top: 5px;
 }
 
 .project {
-  background: #eee;
   margin: 10px 0;
-  padding: 10px;
-  border-radius: 5px;
 }
 
 .recommendation {
-  background: #dff0d8;
-  margin: 10px 0;
-  padding: 10px;
-  border-left: 5px solid #4CAF50;
-}
-
-#recommendation-form {
-  margin-top: 20px;
+  margin: 5px 0;
 }
 
 #popup {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
-  background: #4CAF50;
+  background-color: green;
   color: white;
-  padding: 15px;
+  padding: 10px 20px;
   border-radius: 5px;
   display: none;
 }
